@@ -1,0 +1,2209 @@
+
+/* ألوان المتجر الأساسية */
+
+:root {
+    --cream: #F5EFE4;
+    --pink: #D8C8AC;
+    --burgundy: #7A8050;
+    --text: #353B2C;
+}
+
+
+/* تنسيق الصفحة كاملة */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--cream);
+    color: var(--text);
+    direction: rtl;
+}
+
+/* تنسيق العنوان الرئيسي */
+h1 {
+    color: var(--burgundy);
+    font-size: 36px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* تنسيق الفقرة */
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* رأس المتجر */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 7%;
+    background-color: var(--cream);
+}
+
+.logo {
+    color: var(--text);
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navigation {
+    display: flex;
+    gap: 24px;
+}
+
+.navigation a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* القسم الرئيسي */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: var(--cream);
+}
+
+.eyebrow {
+    color: var(--burgundy);
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.hero h1 {
+    color: var(--text);
+    font-size: 42px;
+    margin-top: 20px;
+}
+
+.hero-description {
+    color: var(--text);
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.main-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    background-color: var(--burgundy);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* قسم المنتجات */
+.products {
+    padding: 60px 7%;
+    background-color: #FAF7F0;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading h2 {
+    color: var(--text);
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.section-heading > p:last-child {
+    color: #6B6D58;
+    font-size: 16px;
+}
+
+/* شبكة المنتجات */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+/* بطاقة المنتج */
+.product-card {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #E5DDCE;
+}
+
+.product-card img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    color: var(--text);
+    font-size: 19px;
+}
+
+.product-info p {
+    color: #6B6D58;
+    font-size: 14px;
+    line-height: 1.8;
+    padding: 0;
+    text-align: right;
+}
+
+.price {
+    display: block;
+    color: var(--burgundy);
+    font-weight: bold;
+    font-size: 18px;
+    margin: 16px 0;
+}
+
+.product-card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--burgundy);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* الشاشات المتوسطة */
+@media (max-width: 800px) {
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* الهواتف */
+@media (max-width: 520px) {
+    .navigation {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+
+/* =====================================
+   PETALOO AURA — LUXURY FLOWER SHOP
+   ===================================== */
+
+:root {
+    --cream: #f7f1e8;
+    --beige: #e7d7c2;
+    --olive: #72784b;
+    --dark-olive: #444a30;
+    --text: #34352c;
+    --muted: #77766b;
+    --white: #fffdf9;
+    --border: #e8dfd2;
+}
+
+/* الإعدادات العامة */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Tahoma", Arial, sans-serif;
+    background: var(--white);
+    color: var(--text);
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* الشريط العلوي */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding: 22px 7%;
+    background: rgba(255, 253, 249, 0.97);
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--dark-olive);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navigation a {
+    font-size: 14px;
+    color: var(--text);
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: var(--olive);
+}
+
+/* الواجهة الرئيسية */
+.hero {
+    min-height: 490px;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:
+        radial-gradient(
+            ellipse at top left,
+            rgba(231, 215, 194, 0.65),
+            transparent 55%
+        ),
+        linear-gradient(
+            135deg,
+            #f7f1e8,
+            #eee4d5,
+            #faf7f0
+        );
+    border-bottom: 1px solid var(--border);
+}
+
+.eyebrow {
+    margin: 0 0 14px;
+    color: var(--olive);
+    font-family: Georgia, serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.hero h1 {
+    margin: 0;
+    color: var(--dark-olive);
+    font-size: clamp(36px, 5vw, 58px);
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+.hero-description {
+    max-width: 480px;
+    margin: 20px 0 30px;
+    color: var(--muted);
+    font-size: 16px;
+}
+
+.main-button {
+    display: inline-block;
+    padding: 13px 32px;
+    border: 1px solid var(--olive);
+    border-radius: 3px;
+    background: var(--olive);
+    color: white;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.main-button:hover {
+    background: var(--dark-olive);
+    border-color: var(--dark-olive);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(68, 74, 48, 0.15);
+}
+
+/* قسم المنتجات */
+.products {
+    padding: 85px 7%;
+    background: var(--white);
+}
+
+.section-heading {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin: 0 0 10px;
+    color: var(--dark-olive);
+    font-size: clamp(25px, 3vw, 36px);
+    font-weight: normal;
+}
+
+.section-heading > p:last-child {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* شبكة بطاقات المنتجات */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+/* بطاقة المنتج */
+.product-card {
+    min-width: 0;
+    overflow: hidden;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(60, 50, 35, 0.035);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 16px 35px rgba(60, 50, 35, 0.12);
+}
+
+.product-card img {
+    display: block;
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    background: var(--cream);
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.035);
+}
+
+.product-info {
+    padding: 22px;
+    text-align: center;
+}
+
+.product-info h3 {
+    margin: 0 0 8px;
+    color: var(--dark-olive);
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.product-info p {
+    min-height: 50px;
+    margin: 0 0 12px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.price {
+    display: block;
+    margin: 12px 0 18px;
+    color: var(--olive);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* زر الطلب */
+.order-button {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--olive);
+    border-radius: 3px;
+    background: transparent;
+    color: var(--dark-olive);
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.order-button:hover {
+    background: var(--olive);
+    color: white;
+}
+
+/* التوافق مع الأجهزة
+/* قسم من نحن */
+.about {
+    padding: 85px 8%;
+    background: #f5efe5;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.about h2,
+.contact h2 {
+    margin: 0 0 18px;
+    color: #444a30;
+    font-size: clamp(27px, 3vw, 38px);
+    font-weight: normal;
+}
+
+.about-content > p:not(.eyebrow) {
+    color: #77766b;
+    font-size: 15px;
+    line-height: 2.2;
+}
+
+/* قسم التواصل */
+.contact {
+    padding: 80px 20px;
+    text-align: center;
+    background: #fffdf9;
+}
+
+.contact > p:not(.eyebrow) {
+    margin: 0 auto 25px;
+    color: #77766b;
+    font-size: 15px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 13px 28px;
+    border: 1px solid #72784b;
+    border-radius: 3px;
+    background: #72784b;
+    color: white;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+    background: #444a30;
+    border-color: #444a30;
+    transform: translateY(-3px);
+}
+
+/* الفوتر */
+.site-footer {
+    padding: 35px 20px;
+    text-align: center;
+    background: #444a30;
+    color: #f7f1e8;
+}
+
+.site-footer .logo {
+    display: inline-block;
+    color: #f7f1e8;
+    font-size: 27px;
+}
+
+.site-footer p {
+    margin: 8px 0 15px;
+    color: #e1d8c8;
+    font-size: 13px;
+}
+
+.site-footer span {
+    color: #d4cbb9;
+    font-size: 11px;
+}
+/* لمسات فاخرة للواجهة الرئيسية */
+.hero {
+    position: relative;
+    overflow: hidden;
+    background:
+    linear-gradient(
+        rgba(28, 33, 23, 0.35),
+        rgba(28, 33, 23, 0.48)
+    ),
+    url("images/WhatsApp Image 2026-10-15 at 9.26.38 PM (3).jpeg");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.hero-decoration {
+    margin-bottom: 12px;
+    color: #92936b;
+    font-size: 55px;
+    line-height: 1.2;
+    animation: flowerFloat 4s ease-in-out infinite;
+}
+
+.hero h1 {
+    letter-spacing: 1px;
+}
+
+.hero-note {
+    margin: 22px 0 0;
+    color: #77766b;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+@keyframes flowerFloat {
+    0%, 100% {
+        transform: translateY(0) rotate(-5deg);
+    }
+
+    50% {
+        transform: translateY(-7px) rotate(5deg);
+    }
+}
+
+/* لمسة أنيقة على الشعار */
+.logo {
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #92936b;
+}
+
+/* حركة لطيفة للأزرار */
+.main-button,
+.contact-button,
+.order-button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.main-button:focus-visible,
+.contact-button:focus-visible,
+.order-button:focus-visible,
+.navigation a:focus-visible {
+    outline: 2px solid #92936b;
+    outline-offset: 4px;
+}
+
+/* احترام إعداد تقليل الحركة */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+/* شريط مميزات المتجر */
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    padding: 38px 7%;
+    background: #fffdf9;
+    border-bottom: 1px solid #e8dfd2;
+    text-align: center;
+}
+
+.benefit {
+    padding: 10px;
+}
+
+.benefit-icon {
+    color: #85885b;
+    font-size: 30px;
+}
+
+.benefit h3 {
+    margin: 7px 0;
+    color: #444a30;
+    font-size: 16px;
+}
+
+.benefit p {
+    margin: 0;
+    color: #77766b;
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+    .benefits {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 25px 15px;
+    }
+
+    .benefit {
+        padding: 8px;
+    }
+}
+/* تحسين عرض صور المنتجات */
+.product-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fffdf9;
+    border: 1px solid #e8dfd2;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 32px rgba(68, 74, 48, 0.13);
+}
+
+.product-card img {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.04);
+}
+
+.product-info {
+    padding: 22px 18px;
+    text-align: center;
+}
+
+.product-info h3 {
+    min-height: 32px;
+    color: #444a30;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.product-info p {
+    color: #77766b;
+    line-height: 1.9;
+}
+
+.price {
+    color: #72784b;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.order-button {
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .product-card img {
+        height: 300px;
+    }
+}
+
+/* ========================================
+   PETALOO AURA — SIGNATURE LUXURY DESIGN
+   ======================================== */
+
+:root {
+    --luxury-cream: #f7f2e9;
+    --luxury-beige: #e7d8c4;
+    --luxury-olive: #737950;
+    --luxury-deep: #3f4630;
+    --luxury-text: #34352d;
+    --luxury-muted: #817e72;
+    --luxury-border: #e9e0d3;
+}
+
+/* نعومة عامة */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 25px;
+}
+
+body {
+    color: var(--luxury-text);
+    background: #fffdf9;
+    letter-spacing: 0.1px;
+}
+
+::selection {
+    background: #dfe0ca;
+    color: var(--luxury-deep);
+}
+
+/* الشعار والشريط العلوي */
+.site-header {
+    position: relative;
+    padding: 22px 7%;
+    background: rgba(255, 253, 249, 0.97);
+    border-bottom: 1px solid var(--luxury-border);
+    box-shadow: 0 3px 18px rgba(63, 70, 48, 0.035);
+}
+
+.logo {
+    color: var(--luxury-deep);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(24px, 3vw, 32px);
+    letter-spacing: 1.2px;
+}
+
+.navigation a {
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.navigation a::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background: var(--luxury-olive);
+    content: "";
+    transition: width 0.3s ease;
+}
+
+.navigation a:hover {
+    color: var(--luxury-olive);
+}
+
+.navigation a:hover::after {
+    width: 100%;
+}
+
+/* واجهة رئيسية أنيقة */
+.hero {
+    position: relative;
+    isolation: isolate;
+    min-height: 500px;
+    padding: 90px 22px;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            ellipse at 8% 20%,
+            rgba(115, 121, 80, 0.13),
+            transparent 35%
+        ),
+        radial-gradient(
+            ellipse at 92% 85%,
+            rgba(215, 191, 160, 0.36),
+            transparent 38%
+        ),
+        linear-gradient(135deg, #f9f5ed, #eee2d1);
+}
+
+.hero::before,
+.hero::after {
+    position: absolute;
+    z-index: -1;
+    width: 210px;
+    height: 210px;
+    border: 1px solid rgba(115, 121, 80, 0.17);
+    border-radius: 50%;
+    content: "";
+    pointer-events: none;
+}
+
+.hero::before {
+    top: -110px;
+    right: -70px;
+}
+
+.hero::after {
+    bottom: -130px;
+    left: -60px;
+}
+
+.hero h1 {
+    color: var(--luxury-deep);
+    line-height: 1.5;
+}
+
+.hero-description {
+    max-width: 440px;
+    line-height: 2.2;
+}
+
+.eyebrow {
+    color: var(--luxury-olive);
+    letter-spacing: 3px;
+}
+
+/* الأزرار */
+.main-button,
+.contact-button {
+    padding: 14px 30px;
+    border: 1px solid var(--luxury-deep);
+    border-radius: 2px;
+    background: var(--luxury-deep);
+    color: #fffdf8;
+    box-shadow: 0 5px 14px rgba(63, 70, 48, 0.09);
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.main-button:hover,
+.contact-button:hover {
+    background: var(--luxury-olive);
+    border-color: var(--luxury-olive);
+    box-shadow: 0 9px 22px rgba(63, 70, 48, 0.15);
+    transform: translateY(-2px);
+}
+
+/* عنوان قسم المنتجات */
+.products {
+    padding: 85px 7%;
+}
+
+.section-heading {
+    margin-bottom: 48px;
+}
+
+.section-heading h2 {
+    color: var(--luxury-deep);
+    line-height: 1.7;
+}
+
+.section-heading > p:last-child {
+    line-height: 2;
+}
+
+/* بطاقات المنتجات */
+.product-grid {
+    align-items: stretch;
+    gap: 28px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid var(--luxury-border);
+    border-radius: 4px;
+    background: #fffdf9;
+    box-shadow: 0 6px 22px rgba(63, 70, 48, 0.045);
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.product-card:hover {
+    border-color: #d4cfb8;
+    box-shadow: 0 16px 35px rgba(63, 70, 48, 0.12);
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    background: var(--luxury-cream);
+    transition: transform 0.6s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.035);
+}
+
+.product-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 22px 20px;
+}
+
+.product-info h3 {
+    margin: 0 0 9px;
+    color: var(--luxury-deep);
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.product-info p {
+    flex: 1;
+    color: var(--luxury-muted);
+    font-size: 13px;
+    line-height: 2;
+}
+
+.price {
+    margin: 12px 0 18px;
+    color: var(--luxury-olive);
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.order-button {
+    min-height: 45px;
+    padding: 12px 15px;
+    border: 1px solid var(--luxury-olive);
+    border-radius: 2px;
+    background: transparent;
+    color: var(--luxury-deep);
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.order-button:hover {
+    background: var(--luxury-deep);
+    border-color: var(--luxury-deep);
+    color: white;
+}
+
+/* قسم من نحن */
+.about {
+    padding: 85px 8%;
+    background:
+        radial-gradient(
+            ellipse at top right,
+            rgba(231, 216, 196, 0.35),
+            transparent 55%
+        ),
+        var(--luxury-cream);
+}
+
+.about-content {
+    max-width: 720px;
+}
+
+.about h2,
+.contact h2 {
+    color: var(--luxury-deep);
+    line-height: 1.7;
+}
+
+.about-content > p:not(.eyebrow),
+.contact > p:not(.eyebrow) {
+    line-height: 2.2;
+    color: var(--luxury-muted);
+}
+
+/* شريط المميزات */
+.benefits {
+    background: #fffdf9;
+    border-top: 1px solid var(--luxury-border);
+    border-bottom: 1px solid var(--luxury-border);
+}
+
+.benefit-icon {
+    color: var(--luxury-olive);
+}
+
+/* التواصل */
+.contact {
+    padding: 85px 20px;
+    background: #fffdf9;
+}
+
+/* الفوتر */
+.site-footer {
+    padding: 38px 20px;
+    background: var(--luxury-deep);
+    color: #f7f2e9;
+}
+
+.site-footer .logo {
+    color: #f7f2e9;
+}
+
+/* الأجهزة اللوحية */
+@media (max-width: 900px) {
+    .products {
+        padding: 65px 5%;
+    }
+
+    .product-grid {
+        gap: 20px;
+    }
+
+    .product-card img {
+        height: 270px;
+    }
+}
+
+/* الهواتف */
+@media (max-width: 600px) {
+    .site-header {
+        gap: 14px;
+        padding: 19px 14px;
+    }
+
+    .navigation {
+        gap: 12px 18px;
+    }
+
+    .hero {
+        min-height: 420px;
+        padding: 75px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .products {
+        padding: 55px 17px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin-inline: auto;
+        gap: 24px;
+    }
+
+    .product-card img {
+        height: 320px;
+    }
+
+    .about,
+    .contact {
+        padding: 60px 22px;
+    }
+}
+
+/* تقليل الحركة لمن يفضّل ذلك */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* ===== PETALOO AURA: DARK LUXURY HEADER ===== */
+
+.luxury-header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding: 20px 24px 18px;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            ellipse at 50% 0%,
+            rgba(173, 157, 102, 0.18),
+            transparent 65%
+        ),
+        linear-gradient(135deg, #202519, #3e442e 55%, #25291e);
+    border-bottom: 1px solid rgba(211, 190, 135, 0.45);
+    box-shadow: 0 8px 24px rgba(32, 37, 25, 0.15);
+}
+
+/* زخرفة ذهبية ناعمة في الخلفية */
+.luxury-header::before,
+.luxury-header::after {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgba(211, 190, 135, 0.12);
+    border-radius: 50%;
+    content: "";
+    pointer-events: none;
+}
+
+.luxury-header::before {
+    top: -55px;
+    right: -30px;
+}
+
+.luxury-header::after {
+    bottom: -65px;
+    left: -30px;
+}
+
+/* الشعار */
+.luxury-logo {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    color: #f0dfb4;
+    text-align: center;
+    text-decoration: none;
+}
+
+.luxury-logo:hover {
+    color: #fff0c9;
+}
+
+.logo-flower {
+    display: block;
+    margin-bottom: 1px;
+    color: #d8c28e;
+    font-size: 39px;
+    line-height: 1.1;
+    animation: logoFloat 4s ease-in-out infinite;
+}
+
+.logo-name {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(29px, 4vw, 37px);
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.logo-tagline {
+    margin-top: 5px;
+    color: #d6c9a7;
+    font-family: Georgia, serif;
+    font-size: 9px;
+    letter-spacing: 3px;
+}
+
+/* روابط القائمة */
+.luxury-header .navigation {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px 34px;
+}
+
+.luxury-header .navigation a {
+    color: #f4eddd;
+    font-size: 13px;
+}
+
+.luxury-header .navigation a:hover {
+    color: #e4ce96;
+}
+
+.luxury-header .navigation a::after {
+    background: #d8c28e;
+}
+
+/* حركة خفيفة للوردة */
+@keyframes logoFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+/* الموبايل */
+@media (max-width: 600px) {
+    .luxury-header {
+        padding: 18px 12px;
+        gap: 17px;
+    }
+
+    .logo-flower {
+        font-size: 34px;
+    }
+
+    .luxury-header .navigation {
+        gap: 10px 18px;
+    }
+
+    .luxury-header .navigation a {
+        font-size: 12px;
+    }
+}
+
+/* تقليل الحركة عند الحاجة */
+@media (prefers-reduced-motion: reduce) {
+    .logo-flower {
+        animation: none;
+    }
+}
+
+/* ===== PETALOO AURA — LUXURY COLLECTION ===== */
+
+:root {
+    --olive-dark: #292f22;
+    --olive: #626b46;
+    --gold: #c5aa70;
+    --cream: #f8f4ec;
+    --text: #35372d;
+}
+
+/* خلفية الصفحة */
+body {
+    background: var(--cream);
+    color: var(--text);
+}
+
+/* عناوين الأقسام */
+.products h2,
+.about h2,
+.contact h2 {
+    color: var(--olive-dark);
+    text-align: center;
+    font-family: Georgia, serif;
+    letter-spacing: 0.5px;
+}
+
+/* مساحة قسم المنتجات */
+.products {
+    padding: 65px 6%;
+    background: linear-gradient(
+        180deg,
+        #f8f4ec 0%,
+        #f1eadc 100%
+    );
+}
+
+/* شبكة المنتجات */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    max-width: 1200px;
+    margin: 35px auto 0;
+}
+
+/* بطاقة المنتج */
+.product-card {
+    overflow: hidden;
+    background: #fffdf8;
+    border: 1px solid rgba(197, 170, 112, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 8px 25px rgba(41, 47, 34, 0.07);
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--gold);
+    box-shadow: 0 18px 35px rgba(41, 47, 34, 0.14);
+}
+
+/* صور المنتجات */
+.product-card img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.04);
+}
+
+/* تفاصيل المنتج */
+.product-info {
+    padding: 22px 18px;
+    text-align: center;
+}
+
+.product-info h3 {
+    margin: 0 0 10px;
+    color: var(--olive-dark);
+    font-size: 19px;
+}
+
+.product-info p {
+    color: #777466;
+    line-height: 1.8;
+}
+
+.product-info .price {
+    display: block;
+    margin: 14px 0;
+    color: var(--olive);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* أزرار الطلب */
+.order-button,
+.main-button {
+    display: inline-block;
+    padding: 13px 23px;
+    border: 1px solid var(--gold);
+    border-radius: 3px;
+    background: var(--olive-dark);
+    color: #fff9eb;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.order-button:hover,
+.main-button:hover {
+    background: var(--gold);
+    color: var(--olive-dark);
+    transform: translateY(-2px);
+}
+
+/* قسم من نحن */
+.about {
+    padding: 70px 8%;
+    background: #ebe4d5;
+    text-align: center;
+    line-height: 2;
+}
+
+/* قسم التواصل */
+.contact {
+    padding: 60px 8%;
+    background: #f8f4ec;
+    text-align: center;
+    line-height: 2;
+}
+
+/* نهاية الصفحة */
+.site-footer {
+    padding: 30px 15px;
+    background: var(--olive-dark);
+    color: #e9dfc8;
+    text-align: center;
+    border-top: 1px solid var(--gold);
+}
+
+/* تنسيق الهاتف */
+@media (max-width: 800px) {
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .product-card img {
+        height: 230px;
+    }
+
+    .products {
+        padding: 45px 4%;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card img {
+        height: 300px;
+    }
+}
+
+/* احترام إعدادات تقليل الحركة */
+@media (prefers-reduced-motion: reduce) {
+    .product-card,
+    .product-card img,
+    .order-button,
+    .main-button {
+        transition: none;
+    }
+
+    .product-card:hover,
+    .product-card:hover img {
+        transform: none;
+    }
+}
+
+/* ===== PETALOO AURA — LUXURY HERO ===== */
+
+.hero {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 590px;
+    padding: 85px 24px;
+    overflow: hidden;
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(28, 33, 23, 0.48),
+            rgba(28, 33, 23, 0.60)
+        ),
+        url("images/WhatsApp Image 2026-10-15 at 9.26.38 PM (3).jpeg");
+
+    background-size: cover;
+    background-position: center 45%;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid #c5aa70;
+}
+
+/* زخرفة ذهبية ناعمة */
+.hero::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 18px;
+    border: 1px solid rgba(220, 199, 145, 0.55);
+    pointer-events: none;
+}
+
+.hero .eyebrow {
+    color: #e5d3a5;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+.hero .hero-decoration {
+    color: #e0c58a;
+    font-size: 62px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+    margin: 12px 0;
+    color: #fff8e9;
+    font-size: clamp(36px, 5vw, 58px);
+    text-shadow: 0 3px 18px rgba(0, 0, 0, 0.22);
+}
+
+.hero .hero-description {
+    max-width: 520px;
+    color: #fff9ef;
+    line-height: 2.1;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero .main-button {
+    background: #c5aa70;
+    border: 1px solid #e4d2a5;
+    color: #292f22;
+    font-weight: bold;
+}
+
+.hero .main-button:hover {
+    background: #fff4d8;
+    border-color: #fff4d8;
+}
+
+.hero .hero-note {
+    color: #f0dfb4;
+}
+
+/* ===== لمسات ذهبية للمتجر ===== */
+
+.benefits {
+    background: #292f22;
+    border-color: rgba(197, 170, 112, 0.35);
+}
+
+.benefit h3 {
+    color: #f0dfb4;
+}
+
+.benefit p {
+    color: #e0d8c7;
+}
+
+.benefit-icon {
+    color: #c5aa70;
+}
+
+.luxury-header {
+    border-bottom: 1px solid #c5aa70;
+}
+
+.site-footer {
+    border-top: 1px solid #c5aa70;
+}
+
+/* ===== شاشة الهاتف ===== */
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: 500px;
+        padding: 65px 22px;
+        background-position: center;
+    }
+
+    .hero::before {
+        inset: 10px;
+    }
+
+    .hero .hero-decoration {
+        font-size: 48px;
+    }
+
+    .hero .hero-description {
+        font-size: 14px;
+    }
+}
+
+/* إيقاف حركة الوردة لمن يفضّل تقليل الحركة */
+@media (prefers-reduced-motion: reduce) {
+    .hero-decoration {
+        animation: none !important;
+    }
+}
+
+/* ===== PETALOO AURA — LUXURY STYLE ===== */
+
+:root {
+    --olive-dark: #292f20;
+    --olive: #55583a;
+    --gold: #c5aa70;
+    --cream: #f8f2e7;
+    --sand: #e4d4bb;
+    --text-dark: #353827;
+}
+
+/* خلفية الموقع */
+body {
+    background: var(--cream);
+    color: var(--text-dark);
+}
+
+/* الشريط العلوي */
+.luxury-header {
+    background: var(--olive-dark);
+    border-bottom: 1px solid var(--gold);
+    color: var(--cream);
+}
+
+/* اسم المتجر */
+.luxury-logo .logo-name {
+    color: #f5e6c4;
+    letter-spacing: 1px;
+}
+
+.luxury-logo .logo-flower {
+    color: var(--gold);
+}
+
+/* روابط القائمة */
+.navigation a {
+    transition: color 0.25s ease;
+}
+
+.luxury-header .navigation a {
+    color: var(--cream);
+}
+
+.luxury-header .navigation a:hover {
+    color: var(--gold);
+}
+
+/* قسم المنتجات */
+.products {
+    background: var(--cream);
+}
+
+.product-card {
+    overflow: hidden;
+    background: #fffaf1;
+    border: 1px solid var(--sand);
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(53, 59, 44, 0.07);
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 9px 22px rgba(53, 59, 44, 0.13);
+}
+
+.product-card img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    color: var(--olive-dark);
+}
+
+.product-card .order-button {
+    background: var(--olive);
+    color: white;
+    border: 1px solid var(--gold);
+    border-radius: 30px;
+}
+
+.product-card .order-button:hover {
+    background: var(--olive-dark);
+}
+
+/* تذييل الموقع */
+.site-footer {
+    background: var(--olive-dark);
+    color: var(--cream);
+    border-top: 1px solid var(--gold);
+}
+
+/* الهاتف */
+@media (max-width: 600px) {
+    .product-card:hover {
+        transform: none;
+    }
+}
+
+/* ===== المفضلة وسلة المشتريات ===== */
+
+.product-card {
+    position: relative;
+}
+
+.favorite-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #e4d4bb;
+    border-radius: 50%;
+    background: #fffaf1;
+    color: #55583a;
+    font-size: 23px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #00000012;
+}
+
+.favorite-button.active {
+    color: #b34452;
+    background: #fff0f1;
+}
+
+.favorite-button:hover {
+    transform: scale(1.08);
+}
+
+.add-cart-button {
+    width: 100%;
+    margin-top: 9px;
+    padding: 10px;
+    border: 1px solid #c5aa70;
+    border-radius: 25px;
+    background: #e9deca;
+    color: #292f20;
+    cursor: pointer;
+    font: inherit;
+}
+
+.add-cart-button:hover {
+    background: #d9c8a8;
+}
+
+.cart-panel {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 18px;
+    border: 1px solid #c5aa70;
+    border-radius: 35px;
+    background: #292f20;
+    color: #fffaf1;
+    box-shadow: 0 5px 20px #00000025;
+    cursor: pointer;
+    font: inherit;
+}
+
+.cart-count {
+    display: inline-flex;
+    min-width: 25px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #c5aa70;
+    color: #292f20;
+    font-weight: bold;
+}
+
+.cart-dialog {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background: #0008;
+}
+
+.cart-dialog.open {
+    display: flex;
+}
+
+.cart-content {
+    width: min(100%, 440px);
+    max-height: 85vh;
+    overflow: auto;
+    padding: 22px;
+    border-radius: 14px;
+    background: #fffaf1;
+    color: #292f20;
+}
+
+.cart-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e4d4bb;
+}
+
+.cart-row button,
+.cart-actions button {
+    padding: 8px 12px;
+    border: 1px solid #c5aa70;
+    border-radius: 20px;
+    background: #55583a;
+    color: white;
+    cursor: pointer;
+    font: inherit;
+}
+
+.cart-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.cart-total {
+    margin-top: 16px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .cart-panel {
+        right: 12px;
+        bottom: 12px;
+    }
+}
+
+/* البحث عن المنتجات - Petaloo Aura */
+.product-search {
+    width: min(90%, 520px);
+    margin: 25px auto 30px;
+    text-align: center;
+}
+
+.product-search input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 14px 20px;
+    border: 1px solid #c5aa70;
+    border-radius: 30px;
+    background: #fffaf1;
+    color: #292f20;
+    font: inherit;
+    outline: none;
+    transition: box-shadow 0.2s ease;
+}
+
+.product-search input:focus {
+    box-shadow: 0 0 0 3px #c5aa7033;
+}
+
+#searchMessage {
+    color: #55583a;
+    font-size: 14px;
+}
+
+.product-card[hidden] {
+    display: none !important;
+}
+
+/* ===== إصلاح تناسق شبكة المنتجات ===== */
+#products {
+    width: 100%;
+    max-width: 1400px;
+    margin-inline: auto;
+    padding: 60px 5%;
+    box-sizing: border-box;
+}
+
+#products .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 35px auto 0;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+#products .product-card {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#products .product-card img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+#products .product-info {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1000px) {
+    #products .product-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    #products .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    #products .product-card img {
+        height: 210px;
+    }
+}
+
+@media (max-width: 380px) {
+    #products .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== قسم تقييمات Petaloo Aura ===== */
+.reviews {
+    padding: 75px 5%;
+    background: #f8f1e5;
+    box-sizing: border-box;
+}
+
+.reviews .section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 1100px;
+    margin: 0 auto 40px;
+}
+
+.review-card,
+.review-form-card {
+    padding: 25px;
+    border: 1px solid #e4d4bb;
+    border-radius: 18px;
+    background: #fffaf1;
+    box-shadow: 0 5px 18px #292f2010;
+    box-sizing: border-box;
+}
+
+.review-stars {
+    color: #b18a3b;
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+
+.review-card h3 {
+    color: #55583a;
+    font-size: 16px;
+}
+
+.review-text {
+    line-height: 1.9;
+    overflow-wrap: anywhere;
+}
+
+.review-form-card {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.review-form-card form {
+    display: grid;
+    gap: 12px;
+}
+
+.review-form-card input[type="text"],
+.review-form-card textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d9c8a8;
+    border-radius: 10px;
+    background: #fffdf8;
+    color: #292f20;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.rating-picker {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.rating-picker input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.rating-picker label {
+    cursor: pointer;
+    color: #cbbda5;
+    font-size: 34px;
+}
+
+.rating-picker label:has(input:checked),
+.rating-picker label:has(input:checked) ~ label {
+    color: #b18a3b;
+}
+
+.rating-picker label:has(input:focus-visible) {
+    outline: 2px solid #55583a;
+    outline-offset: 3px;
+}
+
+.review-submit {
+    padding: 13px 20px;
+    border: 0;
+    border-radius: 25px;
+    background: #55583a;
+    color: #fffaf1;
+    font: inherit;
+    cursor: pointer;
+}
+
+#reviewMessage {
+    line-height: 1.7;
+}
+
+@media (max-width: 750px) {
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* ترتيب شبكة المنتجات */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    width: min(1100px, 92%);
+    margin: 35px auto;
+    align-items: stretch;
+}
+
+/* تصميم بطاقة المنتج */
+.product-card {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 18px;
+    background: #fffaf2;
+    border: 1px solid #e7dac3;
+    box-shadow: 0 5px 18px rgba(65, 55, 35, 0.08);
+}
+
+/* صورة المنتج */
+.product-card img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* تفاصيل المنتج */
+.product-info {
+    padding: 18px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.product-info h3 {
+    font-size: 20px;
+    line-height: 1.7;
+    margin: 8px 0;
+    overflow-wrap: anywhere;
+}
+
+.product-info p {
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* العرض على التلفون */
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        width: 94%;
+        margin: 24px auto;
+    }
+
+    .product-card img {
+        height: 190px;
+    }
+
+    .product-info {
+        padding: 12px 8px;
+    }
+
+    .product-info h3 {
+        font-size: 16px;
+    }
+
+    .product-info p {
+        font-size: 13px;
+    }
+}
+
+/* إصلاح ترتيب صور وبطاقات المنتجات */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+    align-items: stretch;
+}
+
+.product-card {
+    display: flex !important;
+    flex-direction: column !important;
+    min-width: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.product-card img {
+    display: block;
+    width: 100% !important;
+    height: 260px !important;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.product-info h3 {
+    margin-top: 0;
+}
+
+.product-info .order-button,
+.product-info .add-cart-button {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* التوافق مع التابلت */
+@media (max-width: 900px) {
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+}
+
+/* التوافق مع التلفون */
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .product-card img {
+        height: 180px !important;
+    }
+
+    .product-info {
+        padding: 10px;
+    }
+
+    .product-info h3 {
+        font-size: 14px;
+    }
+
+    .product-info p {
+        font-size: 12px;
+    }
+
+    .product-info .price {
+        font-size: 14px;
+    }
+
+    .product-info .order-button,
+    .product-info .add-cart-button {
+        font-size: 12px;
+        padding: 9px 5px;
+    }
+}
